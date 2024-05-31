@@ -40,7 +40,7 @@ def kMeans(dataBase, K, D):
         # Plot the results
         for i in range(K):
             ax.scatter(means[i, 1], means[i, 0], s=100, c='black', marker='*')
-        ax.scatter(dataBase[:, 1], dataBase[:, 0], c=clusterId, cmap='viridis')
+        ax.scatter(dataBase[:, 1], dataBase[:, 0], c=clusterId, cmap='gist_rainbow')
 
         ax.set_title(f'Iteration {iter+1}')
 
